@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* { box-sizing: border-box; }
+
+.hero-wrapper{
+ background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.hero-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; 
+    position: absolute; /* Stays on top of hero section */
+    width: 100%;
+    top: 0;
+    left: 0;
+     z-index: 2;
+}
+
+.logo {
+  height: 40px;
+}
+
+.hero-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  gap: 30px;
+}
+
+.hero-header nav ul :hover{
+    color: #FF6565;
+}
+
+.hero {
+display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+    text-align: center;
+    min-height: 100vh;  
+}
+
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.button {
+  background-color: #ff4c4c;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button :hover{
+    opacity: 0.9;
+}
